@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) throws Throwable {
 
-        int testCode = 1;
+        int testCode = 9;
 
         if(testCode == 1) {
             FinalizerTest finalizerTest = new FinalizerTest();
@@ -37,8 +37,6 @@ public class Main {
                 finalizerTest.close();
             }
         }
-
-
 
     }
 
