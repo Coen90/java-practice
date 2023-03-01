@@ -1,10 +1,10 @@
-package coding.test.programmers.real;
+package coding.test.real;
 
 import java.util.*;
 
 public class Swit3 {
 
-    static int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+    static int[][] dirs = { {-1, 0}, {1, 0}, {0, -1}, {0, 1} }; // 좌 우 하 상
 
     public static int solution(int[][] board, int c) {
         int n = board.length;

@@ -1,4 +1,4 @@
-package coding.test.programmers.real;
+package coding.test.real;
 
 public class Swit2 {
 

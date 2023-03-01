@@ -1,6 +1,4 @@
-package coding.test.programmers.real;
-
-import java.util.*;
+package coding.test.real;
 
 public class Solution {
     public int solution(int[] numbers, int k) {
