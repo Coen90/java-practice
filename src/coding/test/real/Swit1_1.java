@@ -24,7 +24,5 @@ public class Swit1_1 {
 
     public static void main(String[] args) {
         System.out.println(solution(21));
-        int n = 21;
-        System.out.println(String.valueOf(n).length());
     }
 }
