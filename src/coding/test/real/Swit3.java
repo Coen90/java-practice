@@ -30,7 +30,7 @@ public class Swit3 {
         }
         costs[startRow][startCol] = 0; // 시작점 설정
 
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[2] - b[2]); // 오름차순 정렬
+        Queue<int[]> pq = new PriorityQueue<>((a, b) -> a[2] - b[2]); // 오름차순 정렬
         pq.add(new int[]{startRow, startCol, 0}); // 시작열, 시작행, 에너지
 
         while (!pq.isEmpty()) {
