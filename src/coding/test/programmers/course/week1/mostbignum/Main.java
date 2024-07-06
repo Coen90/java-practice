@@ -1,4 +1,4 @@
-package coding.test.programmers.week1.mostbignum;
+package coding.test.programmers.course.week1.mostbignum;
 
 import java.util.Arrays;
 import java.util.Comparator;

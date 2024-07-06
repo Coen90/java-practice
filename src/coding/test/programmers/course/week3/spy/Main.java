@@ -1,4 +1,4 @@
-package coding.test.programmers.week3.spy;
+package coding.test.programmers.course.week3.spy;
 
 import java.util.Arrays;
 import java.util.HashMap;

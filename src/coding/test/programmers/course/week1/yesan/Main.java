@@ -1,4 +1,4 @@
-package coding.test.programmers.week1.yesan;
+package coding.test.programmers.course.week1.yesan;
 
 import java.util.stream.IntStream;
 

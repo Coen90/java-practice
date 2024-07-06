@@ -1,4 +1,4 @@
-package coding.test.programmers.week1.numbergame;
+package coding.test.programmers.course.week1.numbergame;
 
 import java.util.Arrays;
 

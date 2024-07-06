@@ -1,4 +1,4 @@
-package coding.test.programmers.week1.gijigook;
+package coding.test.programmers.course.week1.gijigook;
 
 import java.util.LinkedList;
 import java.util.Queue;

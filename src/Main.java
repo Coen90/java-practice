@@ -1,6 +1,4 @@
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static class Equals {
@@ -40,6 +38,8 @@ public class Main {
         System.out.println(e1 == e2);
         System.out.println(e1.equals(e2));
 
+        List<Integer> list = new ArrayList<>();
+
         Set<Equals> set = new HashSet<>();
 
         set.add(e1);
@@ -48,5 +48,9 @@ public class Main {
         System.out.print("Set.size = ");
         System.out.println(set.size());
 
+        Queue<String> pq = new PriorityQueue<>();
+
+        pq.offer("test");
+        pq.poll();
     }
 }
