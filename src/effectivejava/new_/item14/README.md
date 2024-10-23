@@ -60,3 +60,35 @@ Comparable을 구현하면 검색, 극단값 계산, 자동 정렬되는 컬렌�
     }
   ```
 
+객체 참조용 비교자 생성 메서드도 있는데, 자세한 사용방법은 그리 중요하진 않은것 같아 사용 예시만 확인해 보고 넘어가겠다.
+
+```java
+Comparator<Object> comparing = Comparator.comparing(o -> o.hashCode());
+Comparator<Object> comparing1 = Comparator.comparing(o -> o.hashCode(), (o1, o2) -> {
+    return o2 - o1;
+});
+System.out.println(comparing.compare(1, 2)); //-1
+System.out.println(comparing1.compare(1, 2)); //1
+```
+
+사실 위 예시에서 사용한 comparing1 에서 사용한 `o2 - o1`은 사용하면 안되는 방식이라고 한다..! (코딩테스트에서 자주 사용하던 방법인데 알아둬야겠다)
+
+이유는 정수 오버플로우를 일으키거나 부동소수점 계산 방식에 따른 오류를 낼 수 있다. 그러니 아래와 같은 방법을 사용하도록 하자.
+
+```java
+Comparator<Object> comparator = new Comparator<>() {
+    @Override
+    public int compare(Object o1, Object o2) {
+        return Integer.compare(o1.hashCode(), o2.hashCode());
+    }
+};
+Comparator<Object> comparator1 = Comparator.comparingInt(Object::hashCode);
+```
+
+## 결론
+
+`>` `<` 비교는 하지말고, compare에서 `-`를 사용한 연산 대신 래퍼타입 변수의 compare를 사용해 비교하자.
+
+객체 비교자 생성 메서드도 있으니 취향에 맞는 방법을 사용하자~
+
+대신 성능이 중요하다면 그냥 래퍼타입의 compare를 사용하자

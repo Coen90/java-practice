@@ -4,7 +4,24 @@ import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
+        Comparator<Object> comparing = Comparator.comparing(o -> o.hashCode());
+        Comparator<Object> comparing1 = Comparator.comparing(o -> o.hashCode(), (o1, o2) -> {
+            return o2 - o1;
+        });
+        System.out.println(comparing.compare(1, 2)); //
+        System.out.println(comparing1.compare(1, 2));
 
+        Comparator<Object> comparator = new Comparator<>() {
+            @Override
+            public int compare(Object o1, Object o2) {
+                return Integer.compare(o1.hashCode(), o2.hashCode());
+            }
+        };
+
+        Comparator<Object> comparator1 = Comparator.comparingInt(Object::hashCode);
+
+        System.out.println(comparator.compare(1, 2));
+        System.out.println(comparator1.compare(1, 2));
     }
 
     public static class PhoneNumber implements Comparator<PhoneNumber> {
