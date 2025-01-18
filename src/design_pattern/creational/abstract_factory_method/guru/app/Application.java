@@ -1,8 +1,8 @@
-package design_pattern.creational.factory_method.guru.app;
+package design_pattern.creational.abstract_factory_method.guru.app;
 
-import design_pattern.creational.factory_method.guru.buttons.Button;
-import design_pattern.creational.factory_method.guru.checkboxes.Checkbox;
-import design_pattern.creational.factory_method.guru.factories.GUIFactory;
+import design_pattern.creational.abstract_factory_method.guru.buttons.Button;
+import design_pattern.creational.abstract_factory_method.guru.checkboxes.Checkbox;
+import design_pattern.creational.abstract_factory_method.guru.factories.GUIFactory;
 
 public class Application {
     private final Button button;

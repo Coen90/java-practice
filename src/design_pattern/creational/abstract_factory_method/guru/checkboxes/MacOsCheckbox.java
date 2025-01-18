@@ -1,4 +1,4 @@
-package design_pattern.creational.factory_method.guru.checkboxes;
+package design_pattern.creational.abstract_factory_method.guru.checkboxes;
 
 public class MacOsCheckbox implements Checkbox {
     @Override

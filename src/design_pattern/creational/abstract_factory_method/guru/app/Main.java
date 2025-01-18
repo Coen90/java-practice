@@ -1,7 +1,7 @@
-package design_pattern.creational.factory_method.guru.app;
+package design_pattern.creational.abstract_factory_method.guru.app;
 
-import design_pattern.creational.factory_method.guru.factories.GUIFactory;
-import design_pattern.creational.factory_method.guru.factories.MacOsFactory;
+import design_pattern.creational.abstract_factory_method.guru.factories.GUIFactory;
+import design_pattern.creational.abstract_factory_method.guru.factories.MacOsFactory;
 
 public class Main {
     public static void main(String[] args) {

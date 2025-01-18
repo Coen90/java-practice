@@ -1,4 +1,4 @@
-package design_pattern.creational.factory_method.guru.buttons;
+package design_pattern.creational.abstract_factory_method.guru.buttons;
 
 public class WindowOsButton implements Button{
 
