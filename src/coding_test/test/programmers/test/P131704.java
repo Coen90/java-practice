@@ -1,8 +1,8 @@
-package coding_test.test.programmers.test.p131704;
+package coding_test.test.programmers.test;
 
 import java.util.Stack;
 
-public class Main {
+public class P131704 {
     public static void main(String[] args) {
         Solution s = new Solution();
 

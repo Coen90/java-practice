@@ -1,8 +1,8 @@
-package coding_test.test.programmers.test.p42884;
+package coding_test.test.programmers.test;
 
 import java.util.Arrays;
 
-public class Main {
+public class P42884 {
 
     public static void main(String[] args) {
         int[][] route1 = new int[][]{{-20, -15}, {-14,-5}, {-18,-13}, {-5,-3}};
